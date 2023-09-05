@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title>Contact Form</title>
+</head>
+
+<body>
+    <button id="openContactFormBtn" class="open-form-button">Open Form</button>
+
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeContactFormBtn">&times;</span>
+            <h2 class="form-heading">Contact Us</h2>
+            <form id="contactForm">
+                <label for="brandName">Brand Name:</label>
+                <input type="text" id="brandNameInput" name="brandNameInput" required>
+
+                <label for="phoneNumber">Telephone Number:</label>
+                <input type="tel" id="phoneNumberInput" name="phoneNumberInput" required>
+
+                <label for="socialMedia">Social Media:</label>
+                <input type="text" id="socialMediaInput" name="socialMediaInput" required>
+
+                <label for="message">Message:</label>
+                <textarea id="messageInput" name="messageInput" required></textarea>
+
+                <button type="button" id="sendContactFormBtn" class="send-form-button">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
